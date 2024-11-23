@@ -1,3 +1,13 @@
 spring:
   application:
     name: gout-backend
+
+  threads:
+    virtual:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,prometheus"
