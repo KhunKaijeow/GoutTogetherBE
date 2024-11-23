@@ -18,6 +18,8 @@ spring:
     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/gout}
     username: ${DATABASE_USER:goutapp}
     password: ${DATABASE_PASSWORD:secret}
+    hikari:
+      maximum-pool-size: 10
 
   # Database Migration
   flyway:
