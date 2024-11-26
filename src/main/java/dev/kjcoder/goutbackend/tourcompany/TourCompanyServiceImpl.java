@@ -3,7 +3,7 @@ package dev.kjcoder.goutbackend.tourcompany;
 import dev.kjcoder.goutbackend.common.exception.EntityNotFound;
 import dev.kjcoder.goutbackend.tourcompany.model.TourCompany;
 import dev.kjcoder.goutbackend.tourcompany.model.TourCompanyDto;
-import dev.kjcoder.goutbackend.tourcompany.model.TourCompanyStatus;
+import dev.kjcoder.goutbackend.common.enumeration.TourCompanyStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
