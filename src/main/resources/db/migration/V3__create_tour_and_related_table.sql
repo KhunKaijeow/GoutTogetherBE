@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS "tours_count" (
 
 ALTER TABLE "tour_companies_login" ADD FOREIGN KEY ("tour_company_id") REFERENCES "tour_companies" ("tour_company_id");
 
-ALTER TABLE "tours_wallet" ADD FOREIGN KEY ("tour_company_id") REFERENCES "tour_companies" ("tour_company_id");
+ALTER TABLE "tours_companies_wallet" ADD FOREIGN KEY ("tour_company_id") REFERENCES "tour_companies" ("tour_company_id");
 
 ALTER TABLE "tours" ADD FOREIGN KEY ("tour_company_id") REFERENCES "tour_companies" ("tour_company_id");
 
