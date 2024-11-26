@@ -2,7 +2,7 @@ package dev.kjcoder.goutbackend.tourcompany;
 
 import dev.kjcoder.goutbackend.common.exception.EntityNotFound;
 import dev.kjcoder.goutbackend.tourcompany.model.TourCompany;
-import dev.kjcoder.goutbackend.tourcompany.model.TourCompanyDto;
+import dev.kjcoder.goutbackend.tourcompany.model.RegisterTourCompanyDto;
 import dev.kjcoder.goutbackend.common.enumeration.TourCompanyStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,9 +20,9 @@ public class TourCompanyServiceImpl implements TourCompanyService{
     }
 
     @Override
-    public TourCompany registerTourCompany(TourCompanyDto tourCompanyDto) {
+    public TourCompany registerTourCompany(RegisterTourCompanyDto registerTourCompanyDto) {
         logger.debug("[registerTourCompany] newly tour company is registering...");
-        var companyName = tourCompanyDto.tourCompanyName();
+        var companyName = registerTourCompanyDto.tourCompanyName();
         var tourCompany = new TourCompany(null,companyName, TourCompanyStatus.WAITING.name());
         var newTourCompany = tourCompanyRepository.save(tourCompany);
         logger.debug("[registerTourCompany] new tour company is registered: {}", newTourCompany);

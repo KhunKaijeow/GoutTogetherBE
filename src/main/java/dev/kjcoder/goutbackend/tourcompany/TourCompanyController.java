@@ -1,7 +1,7 @@
 package dev.kjcoder.goutbackend.tourcompany;
 
+import dev.kjcoder.goutbackend.tourcompany.model.RegisterTourCompanyDto;
 import dev.kjcoder.goutbackend.tourcompany.model.TourCompany;
-import dev.kjcoder.goutbackend.tourcompany.model.TourCompanyDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -21,8 +21,8 @@ public class TourCompanyController {
     }
 
     @PostMapping
-    public ResponseEntity<TourCompany> registerTourCompany(@RequestBody @Validated TourCompanyDto tourCompanyDto) {
-        var tourCompany =  tourCompanyService.registerTourCompany(tourCompanyDto);
+    public ResponseEntity<TourCompany> registerTourCompany(@RequestBody @Validated RegisterTourCompanyDto registerTourCompanyDto) {
+        var tourCompany =  tourCompanyService.registerTourCompany(registerTourCompanyDto);
         return ResponseEntity.ok(tourCompany);
     }
 
