@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS "tour_companies_login" (
 );
 
 CREATE TABLE IF NOT EXISTS "tours_companies_wallet" (
-  "tour_conpany_wallet_id" serial PRIMARY KEY,
+  "tour_company_wallet_id" serial PRIMARY KEY,
   "tour_company_id" int,
   "balance" float NOT NULL,
   "last_updated" timestamp NOT NULL DEFAULT (now())
