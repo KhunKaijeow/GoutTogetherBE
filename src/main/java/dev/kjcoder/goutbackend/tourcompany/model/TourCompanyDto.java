@@ -1,4 +1,10 @@
 package dev.kjcoder.goutbackend.tourcompany.model;
 
-public class TourCompanyDto {
+import jakarta.validation.constraints.NotBlank;
+
+public record TourCompanyDto(
+        Integer tourCompanyId,
+        @NotBlank String tourCompanyName,
+        String status
+) {
 }

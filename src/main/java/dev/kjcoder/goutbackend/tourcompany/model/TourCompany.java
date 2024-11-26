@@ -1,4 +1,4 @@
-package dev.kjcoder.goutbackend.tourcompany;
+package dev.kjcoder.goutbackend.tourcompany.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;

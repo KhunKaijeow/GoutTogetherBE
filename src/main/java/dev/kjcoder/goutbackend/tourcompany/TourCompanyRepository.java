@@ -1,4 +1,7 @@
 package dev.kjcoder.goutbackend.tourcompany;
 
-public interface TourCompanyRepository {
+import dev.kjcoder.goutbackend.tourcompany.model.TourCompany;
+import org.springframework.data.repository.CrudRepository;
+
+public interface TourCompanyRepository extends CrudRepository<TourCompany, Integer > {
 }
