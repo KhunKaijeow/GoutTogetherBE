@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS "tour_companies" (
   "tour_company_id" serial PRIMARY KEY,
-  "company_name" varchar(255) NOT NULL,
+  "tour_company_name" varchar(255) NOT NULL,
   "status" varchar(20) NOT NULL
 );
 
