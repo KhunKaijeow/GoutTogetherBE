@@ -1,4 +1,4 @@
-package dev.kjcoder.goutbackend.tourcompany;
+package dev.kjcoder.goutbackend.tourcompany.repository;
 
 import dev.kjcoder.goutbackend.tourcompany.model.TourCompany;
 import org.springframework.data.repository.CrudRepository;
