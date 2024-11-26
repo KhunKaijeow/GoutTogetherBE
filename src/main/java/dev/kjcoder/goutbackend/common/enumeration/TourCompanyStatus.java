@@ -1,4 +1,4 @@
-package dev.kjcoder.goutbackend.tourcompany.model;
+package dev.kjcoder.goutbackend.common.enumeration;
 
 public enum TourCompanyStatus {
     WAITING,
